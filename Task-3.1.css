@@ -24,7 +24,7 @@ body{
 .top .container{
     margin: 0;
     padding: 0;
-    background-image: url('images\mobile\image-header.jpg');
+    background-image: url('image-header.jpg');
     background-size: 500px;
     width: 500px;      
     height: 715px; 
