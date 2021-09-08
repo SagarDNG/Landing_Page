@@ -18,15 +18,13 @@ body{
     padding: 0;
 }
 
-a:hover{
-    color: coral;
-}
+
 
 /*1st Part- top Container*/
 .top .container{
     margin: 0;
     padding: 0;
-    background-image: url('images/mobile/image-header.jpg');
+    background-image: url('images\mobile\image-header.jpg');
     background-size: 500px;
     width: 500px;      
     height: 715px; 
