@@ -18,7 +18,7 @@ body{
     padding: 0;
 }
 
-
+/*For Mobile Part*/
 /*1st Part- top Container*/
 .top .container{
     margin: 0;
@@ -34,8 +34,35 @@ body{
     padding: 3em 2em;
 }
 nav{
+    font-size: 0.5em;
+    font-family: Barlow;
+    opacity: 0.8;
+}
+.top ul{
+    list-style-type: none;
     display: none;
 }
+.top li{
+    margin: 0 -5em 0 0;
+    padding: 0;
+}
+.top .contact a{
+    text-transform: uppercase;
+    font-family: Fraunces;
+    font-weight: 700;
+    font-size: 2.6em;
+    color: black;
+    background-color: hsl(0, 0%, 100%);
+    padding: 1em;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 5em;
+}
+.top .contact :hover{
+    color: hsl(0, 0%, 100%);
+    background-color:rgb(7, 131, 247);
+    border: 3px solid rgb(0, 4, 241);
+}
+
 .top a{
     text-decoration: none;
     color: white;
@@ -295,13 +322,31 @@ nav{
 }
 
 /*8th Part- bottom Container*/
-.bottom{
-    box-sizing: border-box;
-    height: 400px;
-    width: 500px;
-    background-color: rgba(69, 140, 126, 0.45); 
-    
+@media only screen and ( max-width:1440px ) {
+    .bottom{
+        box-sizing: border-box;
+        height: 400px;
+        width: 500px;
+        background-color: rgba(69, 140, 126, 0.45); 
+        
+    }
+
+    .attribution{
+        font-size: 14px; 
+        text-align: center;
+        background-color: rgba(69, 140, 126, 0.45); 
+        width: 500px;
+        height: 100px;
+        padding-top: 50px;
+    }
+    .attribution a{  
+        color: hsl(342, 100%, 50%);
+        text-decoration: none;
+        font-weight: bold;
+    }
+
 }
+
 .bottom a{
     text-decoration: none;
     margin-left: 1.5em;
@@ -335,105 +380,287 @@ nav{
 }
 
 
-.attribution{
-    font-size: 14px; 
-    text-align: center;
-    background-color: rgba(69, 140, 126, 0.45); 
-    width: 500px;
-    height: 100px;
-    padding-top: 50px;
-}
-.attribution a{  
-    color: hsl(342, 100%, 50%);
-    text-decoration: none;
-    font-weight: bold;
-}
+/*For Desktop Part*/
+
+ @media only screen and ( min-width: 1440px) 
+ {
+    .mobile-image{
+        display: none;
+    }
+    
+    .desktop-image{
+        display: flex;
+    }
+    
+    
+    /*1st Part- top Container*/
+    .top .container
+    {
+        width: 1320px;
+        background-image: url('images/desktop/image-header.jpg');
+        background-size: 100%;
+    }
+
+    .hamburger
+    {
+        display: none;
+    }
+
+    .top ul
+    {
+        margin: -5.5em 0 0 90em;
+        display: flex;
+    }
+
+    .top img{
+        margin: 3.5em 0 0 38em;
+        width: 2em;
+        height: 6em;
+    }
+
+
+    /*2nd Part- tranform Container*/
+    .transform .container{
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+    }
+    .transform img{
+        width: 660px;
+    }
+
+    .tranform .left{
+        box-sizing: border-box;
+        width: 660px;
+               
+    }
+    .tranform .right{
+        box-sizing: border-box;
+        width: 660px;
+    }
+    .transform h1{
+        text-align: left;
+        margin: 3.5em 2em 0 2em;
+    }
+    .transform p{
+        text-align: left;
+        margin: 2em 4em 0 5em;
+        font-size: 1em;
+    }
+    .transform .learn-more{
+        text-align: left;
+        margin: 2em 0 0 6.5em ;
+        font-size: 1em;
+    }
+
+    
+    /*3rd Part- stand-out Container*/
+    .stand-out .container{
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+    }
+    .stand-out img{
+        width: 660px;
+    }
+    
+    .stand-out .right{
+        box-sizing: border-box;
+        width: 660px;
+    }
+    .stand-out .left{
+        box-sizing: border-box;
+        width: 660px;
+    }
+    .stand-out h1{
+        text-align: left;
+        margin: 3.5em 2em 0 2em;
+    }
+    .stand-out p{
+        text-align: left;
+        margin: 2em 10em 0 4em;
+        font-size: 1em;
+    }
+    .stand-out .learn-more{
+        text-align: left;
+        margin: 2em 0 0 5.5em;
+        font-size: 1em;
+    }
+
+    /*4th Part- design-and-photography Container*/
+    .design-and-photography{
+        box-sizing: border-box;
+        width: 1320px;
+        display: flex;
+    }
+    .design-and-photography .container1 .design{
+        box-sizing: border-box;
+        width: 660px;
+        height: 550px;
+        background-image: url('images/desktop/image-graphic-design.jpg');
+    }
+    .design-and-photography .container1 .design h1{
+        font-size: 2em;
+        padding: 10em 0 0 0;
+    }
+    .design-and-photography .container1 .design p{
+        font-size: 1em;
+        padding: 2em 10em 0;
+    }
+
+
+    .design-and-photography .container2 .photography{
+        box-sizing: border-box;
+        width: 660px;
+        height: 550px;
+        background-image: url('images/desktop/image-photography.jpg');
+    }
+    .design-and-photography .container2 .photography h1{
+        font-size: 2em;
+        padding: 10em 0 0 0;
+    }
+    .design-and-photography .container2 .photography p{
+        font-size: 1em;
+        padding: 2em 10em 0;
+    }
+
+
+    /*5th Part- testimonial Container*/
+    .testimonial .container{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 1320px;
+        margin: 750px 0 200px -1320px;
+    }
+
+    .testimonial .container ul{
+        display: flex;
+    }
+    .testimonial .container li{
+        padding: 2em;
+    }
+
+
+    
+
+    .testimonial .container img{
+        width: 80px;
+        margin-left: 8.5em;
+       
+    }
+    .testimonial .container blockquote{
+        padding: 1.5em 0 0 0;
+        text-align: center;
+        font-size: 1.1em;
+        margin-bottom: 5em;
+    }
+    .testimonial .container name{
+        font-size: 1.2em;
+        margin: 0 0 0 7em;
+    }
+    .testimonial .container p{
+        font-size: 1em;
+        margin-bottom: 200px;
+    }
 
 
 
 
+    .testimonial .container .Thomas img{
+        margin-left: 10em;
+    }
+
+    .testimonial .container .Thomas blockquote{
+        padding: 1.5em 2em 0 2em;
+    }
+    .testimonial .container .Thomas p{
+        margin-left: -3em;
+    }
+    .testimonial .container .Jennie blockquote{
+        margin-left: -1em;
+    }
+    .testimonial .container .Jennie p{
+        margin-left: 1.5em;
+    }
 
 
 
 
+    /*6th Part- Photos Container*/
+    .photos .container{
+        margin: 1530px 0 0 -1321px;
+        box-sizing: border-box;
+        width: 1320px;
+    }
+
+    .photos ul{
+        display: flex;
+    }
 
 
 
 
+    .photos .top-left img{
+        box-sizing: border-box;
+        width: 330px;
+    }
+
+    .photos .top-right img{
+        box-sizing: border-box;
+        width: 330px;
+        margin: 250px 0 0 -240px;
+    }
+    
+    .photos .bottom-left img{
+        box-sizing: border-box;
+        width: 330px;
+        margin: 250px 0 0 260px;
+    }
+    
+    .photos .bottom-right img{
+        box-sizing: border-box;
+        width: 330px;
+        margin: 500px 0 0 -239px;
+    }
 
 
 
 
+    /*7th Part- bottom Container*/
+    .bottom .container{
+        box-sizing: border-box;
+        width: 1320px;
+        height: 400px;
+        margin: 1939px 0 0 -1320px;
+        background-color: rgba(69, 140, 126, 0.45);        
+    }
+    .bottom .container a{
+        margin-left: 8.5em;
+    }
+
+    .bottom .container ul{
+        margin-left: 25em;
+    }
+
+    .bottom .container .Social-media{
+        margin-left: 30em;
+    }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-body{
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Fraunces', serif;
-    Font-size: 18px;
-}
-#header{
-   width: 100%;
-   height: 800px;
-   text-align: center;
-   background-image:url("./images/desktop/image-header.jpg");
-   background-size: 100% 800px;
-   background-repeat: no-repeat;
-   margin: 0%;
-   padding:0% ;
-}
-
-#transform{
-    box-sizing: border-box;
-    width: 100%;
-    height: 600px;
-    //border: 10px solid black;
-    background-image: url("./images/desktop/image-transform.jpg");
-    text-align: right;
-    background-repeat: no-repeat;
-
-}
-*/
+    .attribution{
+        box-sizing: border-box;
+        width: 1320px;
+        height: 100px;
+        margin: 2339px 0 0 -1320px;
+        font-size: 14px; 
+        text-align: center;
+        background-color: rgba(69, 140, 126, 0.45);        
+        padding-top: 50px;
+    }
+    .attribution a{  
+        color: hsl(342, 100%, 50%);
+        text-decoration: none;
+        font-weight: bold;
+    }
+ }
